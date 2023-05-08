@@ -6,9 +6,9 @@ sv_pipeline = pipeline(
     model='damo/speech_campplus_sv_zh-cn_16k-common',
     model_revision='v1.0.0'
 )
-speaker1_a_wav = 'https://modelscope.cn/api/v1/models/damo/speech_campplus_sv_zh-cn_16k-common/repo?Revision=master&FilePath=examples/speaker1_a_cn_16k.wav'
-speaker1_b_wav = 'https://modelscope.cn/api/v1/models/damo/speech_campplus_sv_zh-cn_16k-common/repo?Revision=master&FilePath=examples/speaker1_b_cn_16k.wav'
-speaker2_a_wav = 'https://modelscope.cn/api/v1/models/damo/speech_campplus_sv_zh-cn_16k-common/repo?Revision=master&FilePath=examples/speaker2_a_cn_16k.wav'
+speaker1_a_wav = 'dataset/deciphered_wav/External0/External0 00006.wav'
+speaker1_b_wav = 'dataset/deciphered_wav/External0/External0 00013.wav'
+speaker2_a_wav = 'dataset/deciphered_wav/External0/External0 00019.wav'
 # 相同说话人语音
 result = sv_pipeline([speaker1_a_wav, speaker1_b_wav])
 print(result)
